@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aman Gupta — theoretical physics, research, notes and projects." />
+  <title>Aman Gupta — Theoretical Physics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home">Aman Gupta</a>
+    <nav>
+      <a href="#home" class="active">Home</a>
+      <a href="#notes">Notes</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#cv">CV</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="header-links">
+      <a href="#" aria-label="GitHub">GH</a>
+      <a href="#" aria-label="Google Scholar">GS</a>
+      <a href="mailto:your-email@example.com" aria-label="Email">✉</a>
+    </div>
+    <button class="menu" aria-label="Open menu">☰</button>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="hero-image"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">THEORETICAL PHYSICS · INDIA</p>
+        <h1>Aman Gupta</h1>
+        <p class="role">Theoretical Physicist</p>
+        <p class="intro">
+          I am interested in understanding the deep structure of quantum field theory,
+          conformal field theory, and generalized symmetries.
+        </p>
+        <div class="hero-actions">
+          <a href="#notes" class="button">Explore notes</a>
+          <a href="#publications" class="button ghost">Research</a>
+        </div>
+      </div>
+      <div class="scroll-cue">↓ <span>scroll to explore</span></div>
+    </section>
+
+    <!-- NOTES -->
+    <section id="notes" class="section notes-section">
+      <div class="section-heading">
+        <p class="eyebrow">01 · LEARNING</p>
+        <h2>Notes from the desk</h2>
+        <p>
+          Things I write down while learning. Some are polished, some are works in progress,
+          and all of them are meant to be useful to someone else learning the same ideas.
+        </p>
+      </div>
+
+      <div class="notes-room">
+        <div class="window-light"></div>
+        <div class="shelf-line"></div>
+
+        <div class="note-wall" id="noteWall"></div>
+
+        <button class="room-archive-button" id="viewAllNotes">
+          <span>View all notes</span>
+          <strong>open the archive →</strong>
+        </button>
+
+        <div class="desk">
+          <div class="desk-paper">
+            <span>currently reading</span>
+            <b>something difficult</b>
+            <i>✦</i>
+          </div>
+          <div class="lamp"><span></span></div>
+          <div class="mug">☕</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications" class="section publications-section">
+      <div class="section-heading light">
+        <p class="eyebrow">02 · RESEARCH</p>
+        <h2>The research desk</h2>
+        <p>My papers, preprints, and other research work.</p>
+      </div>
+
+      <div class="office">
+        <div class="office-window"></div>
+        <div class="blackboard">
+          <span>QFT</span>
+          <span>spin</span>
+          <span>correlations</span>
+          <span>⊥</span>
+          <span>γ + jet</span>
+        </div>
+
+        <div class="research-desk">
+          <div class="desk-books">
+            <div>QFT</div><div>SPIN</div><div>CFT</div>
+          </div>
+
+          <div class="monitor-wrap">
+            <button class="monitor" id="paperMonitor" aria-label="Open publication archive">
+              <div class="monitor-screen">
+                <div class="screen-glow"></div>
+                <span class="screen-kicker">RESEARCH ARCHIVE</span>
+                <strong>Publications</strong>
+                <small>click to explore</small>
+              </div>
+              <div class="monitor-frame"></div>
+              <div class="monitor-stand"></div>
+            </button>
+          </div>
+
+          <button class="paper-stack" id="featuredPaperButton">
+            <span>FEATURED PAPER</span>
+            <b>Transverse Single Spin<br>Asymmetries in γ + jet</b>
+            <small>click to read · arXiv ↗</small>
+          </button>
+
+          <div class="coffee">☕</div>
+          <div class="plant">♧</div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects-section">
+      <div class="section-heading">
+        <p class="eyebrow">03 · WORK</p>
+        <h2>Projects & experiments</h2>
+        <p>A small archive of things I have worked on, from theoretical calculations to computational physics.</p>
+      </div>
+
+      <div class="project-grid" id="projectGrid"></div>
+    </section>
+
+    <!-- CV -->
+    <section id="cv" class="section cv-section">
+      <div class="cv-card">
+        <div>
+          <p class="eyebrow">04 · CURRICULUM VITAE</p>
+          <h2>A little more formally.</h2>
+          <p>
+            Education, research experience, publications, presentations, and the other
+            details that don't fit naturally into the rooms of this website.
+          </p>
+        </div>
+        <a class="button" href="assets/cv.pdf" target="_blank">Open CV ↗</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about-section">
+      <div class="about-photo">
+        <div class="photo-placeholder">
+          <span>Your photo</span>
+          <small>Replace <code>assets/profile.jpg</code></small>
+        </div>
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow">05 · ABOUT</p>
+        <h2>Curious about how things fit together.</h2>
+        <p>
+          I am a physics graduate interested in theoretical high-energy physics, quantum
+          field theory, conformal field theory, and generalized symmetries.
+        </p>
+        <p>
+          This website is part portfolio, part notebook, and part archive — a place to
+          collect the ideas I encounter along the way.
+        </p>
+        <p class="signature">— Aman</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Aman Gupta</span>
+    <span>Built with curiosity & a lot of coffee.</span>
+  </footer>
+
+  <!-- ARCHIVE -->
+  <div class="modal" id="archiveModal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="archive-reader">
+      <button class="close" data-close="archiveModal">×</button>
+      <p class="eyebrow" id="archiveEyebrow">ARCHIVE</p>
+      <h2 id="archiveTitle">Archive</h2>
+      <div id="archiveList"></div>
+    </div>
+  </div>
+
+  <!-- NOTE READER -->
+  <div class="modal" id="noteModal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="note-reader">
+      <button class="close" data-close="noteModal">×</button>
+      <p class="eyebrow" id="noteType">NOTES</p>
+      <h2 id="noteTitle">Title</h2>
+      <p id="noteDescription"></p>
+      <div class="reader-actions">
+        <a id="notePdf" class="button" href="#" target="_blank">Open PDF ↗</a>
+        <button class="button ghost" data-close="noteModal">Back to desk</button>
+      </div>
+      <p class="reader-hint">Add your PDF path in <code>script.js</code> when the note is ready.</p>
+    </div>
+  </div>
+
+  <!-- PAPER READER -->
+  <div class="modal" id="paperModal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="paper-reader">
+      <button class="close" data-close="paperModal">×</button>
+      <div class="paper-meta">
+        <p class="eyebrow" id="paperYear">PUBLICATION · PREPRINT</p>
+        <h2 id="paperTitle">Publication</h2>
+        <p class="paper-authors" id="paperAuthors"></p>
+        <p id="paperDescription"></p>
+        <div class="reader-actions">
+          <a id="arxivLink" class="button" href="#" target="_blank">Open on arXiv ↗</a>
+          <a id="paperPdf" class="button ghost" href="#" target="_blank">Read PDF ↗</a>
+        </div>
+      </div>
+      <div class="pdf-placeholder">
+        <span>PAPER READER</span>
+        <small>Put the PDF in <code>assets/papers/</code> and update its path in <code>script.js</code>.</small>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
